@@ -1,0 +1,97 @@
+#navTitle, .titles, .date {
+
+    color: #038d91;
+}
+
+.titles {
+    font-size: 15px;
+}
+.subtitles {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.input-box{
+    position: relative;
+}
+  
+.input-box i {
+    position: absolute;
+    right: 13px;
+    top:15px;
+    color:#ced4da;
+} 
+
+.tempBig {
+    margin-bottom: 0;
+}
+
+.active {
+    color: white;
+}
+
+#navbarText {
+    flex-direction: row;
+}
+.navbar-nav li {
+    margin-left: 40px;
+}
+
+.containerForecast {
+    background-color: #d8d8d6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#block404, #weather5d {
+    display: none;
+}
+
+#currentWeather, #nearby, #hourlyBlock {
+    display: flex;
+}
+
+@media (max-width: 768px){
+
+
+
+    #hourly .col-md-1 {
+        text-align: center;
+    }
+    #forecastDayCards,
+    #currentForecast {
+        flex-direction: column;
+        text-align: center;
+    }
+    #forecastDayCards .col-sm-1,
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1  {
+      width: 100%;
+      *width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+        *width: 14.285714285714285714285714285714%;
+    }
+    #currentForecast, #forecastDayCards {
+        flex-direction: row;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+        *width: 14.285714285714285714285714285714%;
+    }
+}
+
+
